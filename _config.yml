@@ -1,0 +1,4 @@
+name: Angelina Davies, Angelina in A Major
+markdown: kramdown
+
+permalink: /blog/:year/:month/:day/:title

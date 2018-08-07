@@ -1,0 +1,36 @@
+---
+layout: post
+title: "Deploy your app on Heroku with JawsDB MySQL in 5 Steps"
+date: 2018-08-02
+---
+
+## Deploy your app on HEROKU with JawsDB MySQL in 5 Steps
+The code is slightly different if your app is coded with sequelize, and this is not discussed in this post.
+
+
+So your app runs beautifully in your local browser! You managed to successfully deploy it on Heroku! And just when you hit the 'Open app' button ... the browser thinks ... and states --> Application Error !!!
+
+
+![Heroku Error Screen](/img/error_screen.png)
+
+
+  Oh no, no, no!!! Type ‘heroku logs –tail’ in your terminal and it rains with errors! What on earth is this??? Simply put, the app runs perfectly fine on your localhost at your defined port (eg.3000), but fails to run on Heroku. Why? Because Heroku runs your node.js app ‘differently’ than your local machine. Let’s untangle these errors in 5 steps, in a beginner’s guide fashion:
+
+
+#### STEP 1: Update your Heroku account with your credit card information. 
+
+   Heroku collects this info to preclude potential inappropriate user behavior. 
+* Open Heroku Account Settings in your Heroku dashboard browser. 
+* Click on 'Manage Account', then select 'Billing', and then 'Billing Information'. 
+* Fill in the info and save to update your account with this information. 
+
+![Heroku Credit Card Screen](img/creditcard_screen.png)
+
+#### STEP 2: Choose a name for your app and then create it in Heroku. 
+ 
+* On your terminal type the following command: heroku create your_app_name. 
+* Do not use quotation marks when specifying your app name. 
+* Refresh Heroku browser to see the app name you just created. Alternatively you can create your app name directly in the browser on Heroky.
+
+#### STEP 3: Obtain JawsDB MySQL settings for your app.
+© 2018 GitHub, Inc.

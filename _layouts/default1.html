@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js" integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE="
+    crossorigin="anonymous"></script>
+  <script src="../vendor/jquery/jquery.js"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--Pulling Awesome Font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/half-slider.css" rel="stylesheet">
+  <link href="../css/one-page-wonder.css" rel="stylesheet">
+
+  <!-- favicon -->
+  <link rel="icon" href="../img/myFavicon.ico">
+<br>
+<br>
+<br>	
+	<title>{{ page.title }}</title>
+	
+</head>
+<body>
+<br>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://angelyna.github.io/angelina.github.io/" id="inspire">INSPIRE.CREATE.SHARE.</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#myWorks" id="blog">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br>
+	
+	{{content}}
+	
+<br>
+        <!-- section my Blog -->
+    <section class="masthead text-center text-black">
+      <div class="masthead-content">
+        <p class="masthead-heading mb-0" href="#Blog" id="myBlog">My Blog</p>
+      </div>
+    </section>
+	<br>
+    <section>
+	<div class="container">
+        <div class="media-container-row">
+           <div class="row align-items-center">
+            <div class="p-1">
+	    <div class="card-deck">
+                    <div class="card">
+                      <img class="card-img-top" src="../img/sunshine.jpg" alt="Heroku and MySQL">
+                      <div class="card-body">
+                        <p class="card-title">Coding Challenge. Heroku, MySQL and JawsDB.</p>
+                        <p class="card-text">
+                          <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                        </p>
+			  <p class="card-text" align="right">
+                          <class="text-muted">
+                            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}
+                              <font color="goldenrod" align="right">read more</font>
+                            </a>
+                          </p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src="../img/personal-tax.jpeg" alt="Personal Tax">
+                      <div class="card-body">
+                        <h5 class="card-title">PERSONAL TAX</h5>
+                        <p class="card-text">Selling your home in Canada? You must report to CRA, or a penalty may apply</p>
+			<p class="card-text" align="right">
+                        <class="text-muted">
+                          <a href="https://www.linkedin.com/pulse/selling-your-home-canada-you-must-report-cra-penalty-angelina-davies/">
+                            <font color="goldenrod">read more</font>
+                          </a>
+                          </h2>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src="../img/corporate-tax.jpg" alt="Corporate Tax">
+                      <div class="card-body">
+                        <h5 class="card-title">CORPORATE TAX</h5>
+                        <p class="card-text">Selling your corporation? Maybe some patents? Or other eligible capital property, like your customer
+                          list or goodwill?</p>
+                        <p class="card-text" align="right">
+                          <class="text-muted">
+                            <a href="https://www.linkedin.com/pulse/selling-your-corporation-maybe-some-patents-other-angelina-davies/">
+                              <font color="goldenrod">read more</font>
+                            </a>
+                          </p>
+                      </div>
+                    </div>
+		  </div>
+		</div>
+		    </div>
+	      </section>
+	<br>
+	<br>
+	<br>
+<!-- section Contact Me -->
+  <section class="masthead text-center text-black" id="contactMe">
+    <div class="masthead-content">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <p class="masthead-heading mb-0">Contact Me</p>
+            </div>
+          </div>
+          <div class="col-md-6 order-lg-1">
+            <div class="p-1">
+              <a href="mailto:angelina@accountinginamajor.com" class="btn btn-primary btn-xl rounded-pill mt-7">Send Me a Note</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<br>
+<br>
+
+  <!-- section My Work, includes carousel and card decks-->
+  <section class="masthead text-center text-black" id="myWorks" href="#blog">
+    <div class="masthead-content">
+      <p class="masthead-heading mb-0">My Works</p>
+    </div>
+  </section>
+  <!-- MyWorks carousel -->
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <blockquote align="right">
+              Hi, I'm
+              <strong> Angelina </strong>and I am passionate about building full-stack apps. I’ve always had a passion for math and
+              algorithms, and all things linked to them. And so, I created this site… I hope you enjoy my work, as much as
+              I enjoyed the making of. Touch the
+              <strong>
+                <font color="goldenrod">PLAY app</font>
+              </strong> link(s) to play. It's fun! Enjoy!
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-2">
+            <section>
+              <div id="carouselMyWorks" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <!-- Slide -->
+                  <div class="carousel-item" style="background-image: url('../img/guessTheFamousSingerCeline.png')">
+                  </div>
+                  <!-- Slide -->
+                  <div class="carousel-item" style="background-image: url('../img/TinkerBellGif.gif')">
+                  </div>
+                  <!-- Slide -->
+                  <div class="carousel-item" style="background-image: url('../img/crystalCollector.png')">
+                  </div>
+                  <!-- Slide -->
+                  <div class="carousel-item" style="background-image: url('../img/trainScheduler.gif')">
+                  </div>
+                  <!-- Slide -->
+                  <div class="carousel-item" style="background-image: url('../img/bestMatch.png')">
+                  </div>
+                  <!-- Slide -->
+                  <div class="carousel-item" style="background-image: url('../img/trainScheduler.png')">
+                  </div>
+                  <!-- Slide -->
+                  <div class="carousel-item active" style="background-image: url('../img/burger.png')">
+                  </div>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#carouselMyWorks" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carouselMyWorks" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+          </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!--  Core JavaScript  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+  <!-- MyWorks card decks -->
+  <section class="py-5">
+    <div class="container">
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="../img/trainScheduler.gif" alt="Train Sceduler App">
+          <div class="card-body">
+            <h5 class="card-title">Train Scheduler app</h5>
+            <p class="card-text" align="right">Built in HTML, CSS, JavaScript, JQuery, Firebase Database, Moment.js.</p>
+            <h2 class="card-text" align="right">
+              <class="text-muted">
+                <a href="https://angelyna.github.io/Train-Scheduler/">
+                  <font color="goldenrod">PLAY app</font>
+                </a>
+            </h2>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="../img/crystalCollector.png" alt="Crystal Collector App">
+          <div class="card-body">
+            <h5 class="card-title">Crystal Collector app</h5>
+            <p class="card-text" align="right">Built in HTML, CSS, JavaScript, JQuery.</p>
+            <h2 class="card-text" align="right">
+              <class="text-muted">
+                <a href="https://angelyna.github.io/crystal-collector/">
+                  <font color="goldenrod">PLAY app</font>
+                </a>
+            </h2>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="../img/burger.png" alt="Eat Da Burger App">
+          <div class="card-body">
+            <h5 class="card-title">Eat Da Burger app</h5>
+            <p class="card-text" align="right">Built in HTML, CSS, Bootstrap, Handlebars, ORM, MVC, node.JS, Express, MySQL.</p>
+            <h2 class="card-text" align="right">
+              <class="text-muted">
+                <a href="https://myburgersapp.herokuapp.com">
+                  <font color="goldenrod">PLAY app</font>
+                </a>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="../img/guessTheFamousSingerCeline.png" alt="Guess the Famous Singer App">
+          <div class="card-body">
+            <h5 class="card-title">Guess the Famous Singer app</h5>
+            <p class="card-text" align="right">Built in HTML, CSS, JavaScript, JQuery.</p>
+            <h2 class="card-text" align="right">
+              <class="text-muted">
+                <a href="https://angelyna.github.io/Word-Guess-Game/">
+                  <font color="goldenrod">PLAY app</font>
+                </a>
+            </h2>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="../img/TinkerBellGif.gif" alt="Find Your Inspirational Friend app">
+          <div class="card-body">
+            <h5 class="card-title">Find Your Inspirational Friend app</h5>
+            <p class="card-text" align="right">Built in HTML, CSS, Boostrap, Node, Express, Javascript, JQuery.</p>
+            <h2 class="card-text" align="right">
+              <class="text-muted">
+                <a href="https://findyourinspirationalfriend.herokuapp.com/">
+                  <font color="goldenrod">PLAY app</font>
+                </a>
+            </h2>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="../img/bamazon.png" alt="Bamazon app">
+          <div class="card-body">
+            <h5 class="card-title">Bamazon app</h5>
+            <p class="card-text" align="right">A CLI App built in node.JS and MySQL; npm packages: mysql, inquirer, cli-table, cli-color, figlet.</p>
+            <p class="card-text">
+              <class="text-muted">
+                <a href="https://github.com/angelyna/Bamazon.git">
+                  <h2 align="right">
+                    <font color="goldenrod">PLAY app</font>
+                </a>
+                </h2>
+                <font color="goldenrod">
+                  <p align="right">The app plays only</font>
+                </a> in the bash / terminal:
+                <a href="https://github.com/angelyna/Bamazon.git">(1) clone the Bamazon repo,</a>
+                (2) cd Bamazon, (3) npm i packages asked for, (4) node bamazonCustomer, or node bamazonSupervisor, or node bamazonManager.</a>
+                <a href="https://github.com/angelyna/Bamazon/blob/master/README.pdf"> Read more...</a>
+                </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+		
+
+<br>
+     <!-- section social Media Contact Me -->
+    <section>
+      <div class="container" id="followMe">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <p class="masthead-heading mb-0">Connect with Me!</p>
+              <ul class="social-network social-circle">
+                <li>
+                  <a href="https://github.com/angelyna?tab=repositories" class="icoRss" title="GitHub">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/accountinginAmajor/" class="icoFacebook" title="Facebook">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/AbyAngelina" class="icoTwitter" title="Twitter">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/angelinadavies/" class="icoLinkedin" title="Linkedin">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UC0x34s944Dpqa-ND-61i4KQ/videos" class="icoGoogle" title="YouTube">
+                    <i class="fa fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+         <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <!-- <h2 class="display-4"> -->
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="460" height="300" src="https://www.youtube.com/embed/Vbs9IQqCuZQ" frameborder="0" allow="autoplay; encrypted-media"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-silver">
+      <div class="container">
+       <p class="m-0 text-center text-black style=" width: 3rem; " ">Created by <strong>Angelina Davies</strong> 2018&copy;Founder <strong>Accounting in A Major</strong></p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+</body>
+
+</html>

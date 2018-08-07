@@ -1,0 +1,182 @@
+--- 
+layout: default1 
+---
+<br>
+<!-- section Quote of the day -->
+<section class="masthead text-center text-black">
+    <div class="masthead-content">
+        <h1>Deploy your app on HEROKU with JawsDB MySQL in 5 Steps</h1>
+	    <p>
+		    The code is slightly different if your app is coded with sequelize,</p>
+	            <p>and this is not discussed in this post.
+	    </p>
+	    <br>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="media-container-row">
+            <div class="container col-12 col-md-11 display-11 text-align=" center " id = "5Steps " ">
+                <br>
+                <p>Your app runs beautifully in your local browser! You managed to successfully deploy it on Heroku! And
+                    just when you hit the 'Open app' button ... the browser thinks ... and states --> Application Error !!!</p>
+                <br>
+                     <div id="pic"> <img class="card-img-top" src="../img/error_screen.png" alt="pic1">
+                      </div>
+      
+		<br>
+                <p>Oh no, no, no!!! Type ‘heroku logs –tail’ in your terminal and it rains with errors! What on earth is this???
+                    Simply put, the app runs perfectly fine on your localhost at your defined port (eg. 3000), but fails to
+                    run on Heroku. Why? Because Heroku runs your node.js app ‘differently’ than your local machine. Let’s
+                    untangle these errors in 5 steps, in a beginner’s guide fashion!
+                    <p>
+	<br>
+    <strong>STEP 1: Update your Heroku account with your credit card information.</strong>
+</p>
+<hr>
+<p>Heroku collects this info to preclude potential inappropriate user behavior.</p>
+<ul>
+    <li>
+        Open Heroku Account Settings in your Heroku dashboard browser.
+    </li>
+    <li>
+	Click on 'Manage Account', then select 'Billing', and then 'Billing Information'.
+    </li>
+    <li>
+        Fill in the info and save to update your account with this information.
+    </li>
+</ul>
+<br>
+<div id="pic"> <img class="card-img-top" src="../img/creditcard_screen.png" alt="pic2">
+</div>
+<br>
+<br>		   
+<p>
+    <strong>STEP 2: Choose a name for your app and then create it in Heroku.</strong>
+</p>
+<hr>
+<ul>
+    <li>
+        On your terminal type the following command: heroku create your_app_name.
+    </li>
+    <li>
+        Do not use quotation marks when specifying your app name.
+    </li>
+    Refresh Heroku browser to see the app name you just created. Alternatively you can create your app name directly in the browser
+    on Heroky.
+    <li>
+        Fill in the info and save to update your account with this information.
+    </li>
+</ul>
+<br>
+
+<p>
+    <strong>STEP 3: Obtain JawsDB MySQL settings for your app.</strong>
+</p>
+<hr>	
+<ul>
+    <li>
+        In Heroku browser, select your_app_name tab, then click on Resources tab, then click on Find more 'add_ons' tab.
+Heroku add_ons.
+    </li>
+    <li>
+        Scroll down the page to find JawsDB MySQL tab – the blue shark icon – and click on it to open the JawsDB MySQL page.
+    </li>
+    <li>
+    Once you are on the JawsDB MySQL page, scroll down to find the 'Plans and Pricing' area and select 'Kitefin Shared free'.
+    This is the first option on their list and it is free. Carefully select it. It opens the plan details and together with
+    it, the Install JawsDB MySQL button: 'Heroku Install_Jaws_DB.'
+    </li>
+    <li>
+        Install it. When completed, Heroku will provide you with the connection settings for JawsDB MySQL. You need these settings
+        to configure the connection in your local MySQLWorkbench, to ultimately be able to connect and perform CRUD operations
+        in your app database through Heroku.
+    </li>
+</ul>
+<br>
+<div id="pic"> <img class="card-img-top" src="../img/config1.png" alt="pic3">              
+<br>
+<div id="pic"> <img class="card-img-top" src="../img/config2.png" alt="pic4">  
+<br>
+<br>
+<p><strong>STEP 4: Create a MySQLWorkbench connection. Configure it with your Heroku JawsDBMySQL settings.</strong></p>
+<hr>
+<p>
+In your local machine, open MySQL Workbench to create a new connection. In the'Set Up a New Connection' window fill in your app Heroku settings provided:			
+</p>
+<ul>
+	<li>
+	Fill in Connection name: enter your choice
+	</li>
+	<li>
+	Connection Type: enter Standard TCP/IP
+	</li>
+	<li>
+	Hostname: enter the hostname provided by JawsDB MySQL, it ends in amazonaws.com
+	</li>
+	<li>
+	PORT: enter 3306 (the MySQLWorkbench PORT)
+	</li>
+	<li>
+	Username: enter the username provided by JawsDB MySQL
+	</li>
+	<li>
+	Default Schema: enter the Database name provided by JawsDB MySQL
+	</li>
+	<li>
+	PORT: enter 3306 (the MySQLWorkbench PORT)
+	</li>
+</ul>
+<br>				
+<div id="pic"> <img class="card-img-top" src="../img/herokuConnection.png" alt="pic5">  
+<br>
+<br>			       
+<p>If your MySQL Workbench configuration screen includes a field requesting the Connection String, fill it.The Connection String is provided by Heroku. Afterwards, open this connection and create your first query.
+Inside it create the database table, and add in some data (INSERT INTO TABLE ... you know it!).
+Run your query. After you successfully created it - with no errors - you can close MySQL Workbench.
+In the next step you have to update your app with the newly created config.<p/>
+
+<p><strong>STEP 5: Update your app connections configuartion with the JawsDB MySQL settings.</strong></p>
+<hr>
+<p>
+This step has to be adapted to your app structure. Basicaly two files have to be updated: connection.js and server.js.</p>
+<p>
+<ul>
+	<li>
+Open your connection.js file (or your app connection configuration file, however you named it) and add the code to
+define the Heroku connection with your specific JawsDB url environment. 
+	</li>
+	<li>
+Then update the server connection file (or your app server configuration file, however you namedit). 
+	</li>
+	<li>
+Your updates should look like these:
+	</li>
+</P>			       
+			       
+<br>
+<ul>
+	<li>
+	Connection configuration
+<div id="pic"> <img class="card-img-top" src="../img/connection.png" alt="pic6">  
+	</li>
+	<li>
+	Server configuration
+<div id="pic"> <img class="card-img-top" src="../img/server.png" alt="pic7">  
+	</li>
+</ul>
+<br>  
+<p>Complete these 5 steps. Deploy your app to Heroku. Open your app. Now it runs successfully! Congratulations, you made it!</p>
+
+<p>Contact me if you encounter any difficulties in this process, or need specific guidance. 
+			Finally, in the words of Winston Churchill:<em> never, never, never give up.</em>
+<br>
+</div>
+        </div>
+    </div>
+</section>
+</div>
+    </div>
+      <br>
+	<hr>
