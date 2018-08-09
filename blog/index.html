@@ -72,7 +72,6 @@ layout: default1
     </li>
 </ul>
 <br>
-
 <p>
     <strong>STEP 3: Obtain JawsDB MySQL settings for your app.</strong>
 </p>
@@ -98,19 +97,19 @@ layout: default1
     </li>
 </ul>
 <br>
-<div id="pic"> <img class="card-img-top" src="../img/config1.png" alt="pic4.1">              
+<div id="pic"> <img class="card-img-top" src="../img/config1.png" alt="pic4.1"></div>              
 <br>
-<div id="pic"> <img class="card-img-top" src="../img/config2.png" alt="pic4.2">  
+<div id="pic"> <img class="card-img-top" src="../img/config2.png" alt="pic4.2"></div>  
 <br>
 <br>
 <p><strong>STEP 4: Create a MySQLWorkbench connection. Configure it with your Heroku JawsDBMySQL settings.</strong></p>
 <hr>
 <p>
-In your local machine, open MySQL Workbench to create a new connection. In the'Set Up a New Connection' window fill in your app Heroku settings provided:			
+On your local machine, open MySQL Workbench to create a new connection. In the'Set Up a New Connection' window fill in your app Heroku settings provided:			
 </p>
 <ul>
 	<li>
-	Fill in Connection name: enter your choice
+	Fill in Connection name: your choice
 	</li>
 	<li>
 	Connection Type: enter Standard TCP/IP
@@ -119,7 +118,7 @@ In your local machine, open MySQL Workbench to create a new connection. In the'S
 	Hostname: enter the hostname provided by JawsDB MySQL, it ends in amazonaws.com
 	</li>
 	<li>
-	PORT: enter 3306 (the MySQLWorkbench PORT)
+	PORT: enter 3306 (or your MySQLWorkbench PORT)
 	</li>
 	<li>
 	Username: enter the username provided by JawsDB MySQL
@@ -127,53 +126,56 @@ In your local machine, open MySQL Workbench to create a new connection. In the'S
 	<li>
 	Default Schema: enter the Database name provided by JawsDB MySQL
 	</li>
-	<li>
-	PORT: enter 3306 (the MySQLWorkbench PORT)
-	</li>
 </ul>
 <br>				
 <div id="pic"> <img class="card-img-top" src="../img/herokuConnection.png" alt="pic5">  
 <br>
-<br>			       
-<p>If your MySQL Workbench configuration screen includes a field requesting the Connection String, fill it in. The Connection String is provided by Heroku. Afterwards, open this connection and create your first query.
+<br>
+	<ul>
+	<li>
+If your MySQL Workbench configuration screen includes a field requesting the Connection String, fill it in. The Connection String is provided by Heroku. Afterwards, open this connection and create your first query.
+	</li>
+	<li>
 Inside it create the database table, and add in some data (INSERT INTO TABLE ... you know it!).
 Run your query. After you successfully created it - with no errors - you can close MySQL Workbench.
-In the next step you have to update your app with the newly created config.<p/>
-
+	</li>
+<p>In the next step you have to update your app with the newly created config.<p/>
+<br>
+<br>
 <p><strong>STEP 5: Update your app connections configuartion with the JawsDB MySQL settings.</strong></p>
 <hr>
 <p>
-This step has to be adapted to your app structure. Basicaly two files have to be updated: connection.js and server.js.</p>
+This step has to be adapted to your app structure. Simply put, two files have to be updated: connection.js and server.js.</p>
 <p>
 <ul>
 	<li>
-Open your connection.js file (or your app connection configuration file, however you named it) and add the code to
+Open your connection.js file (or your app "connection" configuration file, however you named it) and add the code to
 define the Heroku connection with your specific JawsDB url environment. 
 	</li>
 	<li>
-Then update the server connection file (or your app server configuration file, however you namedit). 
+Then update the server connection file (or your app "server" configuration file, however you named it). 
 	</li>
 	<li>
-Your updates should look like these:
+The logic behind the updates is captured below:
 	</li>
-</P>			       
-			       
+</P>			       		       
 <br>
 <ul>
 	<li>
 	Connection configuration
-<div id="pic"> <img class="card-img-top" src="../img/connection.png" alt="pic6">  
+		<div id="pic"> <img class="card-img-top" src="../img/connection.png" alt="pic6"></div>
 	</li>
+	
 	<li>
 	Server configuration
-<div id="pic"> <img class="card-img-top" src="../img/server.png" alt="pic7">  
+		<div id="pic"> <img class="card-img-top" src="../img/server.png" alt="pic7"></div>  
 	</li>
 </ul>
 <br>  
 <p>Complete these 5 steps. Deploy your app to Heroku. Open your app. Now it runs successfully! Congratulations, you made it!</p>
 
-<p>Contact me if you encounter any difficulties in this process, or need specific guidance. 
-			Finally, in the words of Winston Churchill:<em> never, never, never give up.</em>
+<h5>Contact me if you encounter any difficulties in this process, or need specific guidance. 
+	Finally, in the words of Winston Churchill:<em> 'never, never, never give up.'</em></h5>
 <br>
 </div>
         </div>
