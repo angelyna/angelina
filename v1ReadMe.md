@@ -23,8 +23,8 @@ Run npm init. Then run npm install in the terminal:
 * passport: 0.3.2
 * sequelize: 3.30.1
 * sequelize-cli: 2.5.1
-* Mocha - [Documentation](https://mochajs.org/)
-* Chai (v3.2.0) - [Documentation](http://www.chaijs.com/)
+* Mocha JavaScript test framework - [Documentation](https://mochajs.org/)
+* Chai assertion library (v3.2.0) - [Documentation](http://www.chaijs.com/)
 
 ## Step-by-Step
 
