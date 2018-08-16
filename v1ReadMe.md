@@ -89,4 +89,4 @@ https://cache-it.heroku.com/addons/jawsdb
 ## Acknowledgments
 
 * Hat tip to our instructor, the TAs and several of our colleagues who had the kindness to share their knowledge with us along the way! 
-* Inspiration and thanks to [stackoverflow](stackoverflow.com).
+* Inspiration and thanks to [stackoverflow](https://stackoverflow.com/).
